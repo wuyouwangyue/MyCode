@@ -1,0 +1,99 @@
+#include<stdio.h>
+#include<stack>
+#include<algorithm>
+using namespace std;
+
+#define Lson r<<1
+#define Rson r<<1|1
+
+const int maxn = 1e5+7;
+const int Mod = 1e9+7;
+
+struct node
+{
+    int L, R, Mid;
+    long long sum;
+}a[maxn<<2];
+
+int val[maxn], Hash[maxn];
+
+void Build(int r, int L, int R)
+{
+    a[r].L = L;
+    a[r].R = R;
+    a[r].Mid = (L+R) / 2;
+    a[r].sum = 0;
+
+    if(L == R)
+        return ;
+
+    Build(Lson, L, a[r].Mid);
+    Build(Rson, a[r].Mid+1, R);
+}
+///x位置加上一个值val
+void Insert(int r, int x, int sum)
+{
+    (a[r].sum += sum) %= Mod;
+
+    if(a[r].L == a[r].R)
+        return ;
+
+    if(x <= a[r].Mid)
+        Insert(Lson, x, sum);
+    else
+        Insert(Rson, x, sum);
+}
+int Query(int r, int L, int R)
+{
+    if(L > R)
+        return 0;
+
+    if(a[r].L == L && a[r].R == R)
+        return a[r].sum;
+
+    if(R <= a[r].Mid)
+        return Query(Lson, L, R);
+    else if(L > a[r].Mid)
+        return Query(Rson, L, R);
+    else
+    {
+        int Lval = Query(Lson, L, a[r].Mid);
+        int Rval = Query(Rson, a[r].Mid+1, R);
+
+        return (Lval+Rval) % Mod;
+    }
+}
+
+int main()
+{
+    int N;
+
+    while(scanf("%d", &N) != EOF)
+    {
+        for(int i=0; i<N; i++)
+        {
+            scanf("%d", &val[i]);
+            Hash[i] = val[i];
+        }
+
+        Hash[N] = 0;
+
+        sort(Hash, Hash+N+1);
+        int hn = unique(Hash, Hash+N+1)-Hash;
+
+        Build(1, 1, hn+1);
+
+        for(int i=0; i<N; i++)
+        {
+            int x = lower_bound(Hash, Hash+hn, val[i]) - Hash;
+            int sum = Query(1, 1, x-1);
+            Insert(1, x, sum+1);
+        }
+
+        int ans = Query(1, 1, hn+1);
+
+        printf("%d\n", ans);
+    }
+
+    return 0;
+}
