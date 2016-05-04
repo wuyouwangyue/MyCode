@@ -190,11 +190,9 @@
 <XPD:REF name="TypedFeatures[0]">9T8twbW7BkadpJLBgJAWqQAA</XPD:REF>
 <XPD:REF name="TypedFeatures[1]">mvhzpV1npUiUjSIQwIBWiQAA</XPD:REF>
 <XPD:REF name="TypedFeatures[2]">97WQ35W5UkOkqzrWbRhGYQAA</XPD:REF>
-<XPD:ATTR name="#TypedParameters" type="integer">4</XPD:ATTR>
+<XPD:ATTR name="#TypedParameters" type="integer">2</XPD:ATTR>
 <XPD:REF name="TypedParameters[0]">fdCMDjjo4UaPc01hnZdTFgAA</XPD:REF>
 <XPD:REF name="TypedParameters[1]">zXxO4l4BAU+nFrWth6SztQAA</XPD:REF>
-<XPD:REF name="TypedParameters[2]">stkSUlXlVU2NSdwMXCk5gQAA</XPD:REF>
-<XPD:REF name="TypedParameters[3]">FbTavjQYAEGhFUYJMEehPAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="SHyr4bfASUqfXL4oXZPdpQAA">
 <XPD:ATTR name="Name" type="string">JEvent</XPD:ATTR>
@@ -323,39 +321,24 @@
 <XPD:OBJ name="Operations[3]" type="UMLOperation" guid="cgDxDCBGIkm55vgbdZoOSwAA">
 <XPD:ATTR name="Name" type="string">SetCurrent</XPD:ATTR>
 <XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="qe29tUB14kG0Wy7tQj/7pAAA">
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="jiK5d4X2W0WFWmjGaZAk/wAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">cgDxDCBGIkm55vgbdZoOSwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="stkSUlXlVU2NSdwMXCk5gQAA">
-<XPD:ATTR name="Name" type="string">win</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">cgDxDCBGIkm55vgbdZoOSwAA</XPD:REF>
-<XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[4]" type="UMLOperation" guid="CVoB5sCT4UeOIhrGAZ1kKQAA">
 <XPD:ATTR name="Name" type="string">GetCurrent</XPD:ATTR>
 <XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="FbTavjQYAEGhFUYJMEehPAAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="HTEMFS5MIE25hgy1a+7qCQAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">CVoB5sCT4UeOIhrGAZ1kKQAA</XPD:REF>
-<XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="WL0A7hEty0WuPRq1w2F+RgAA">
-<XPD:ATTR name="Name" type="string">Root</XPD:ATTR>
-<XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="zXxO4l4BAU+nFrWth6SztQAA">
-<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">WL0A7hEty0WuPRq1w2F+RgAA</XPD:REF>
-<XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="IBwQPs76lE+/JtKocinCHQAA">
+<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="IBwQPs76lE+/JtKocinCHQAA">
 <XPD:ATTR name="Name" type="string">Exec</XPD:ATTR>
 <XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
@@ -363,6 +346,16 @@
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">IBwQPs76lE+/JtKocinCHQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="WL0A7hEty0WuPRq1w2F+RgAA">
+<XPD:ATTR name="Name" type="string">Root</XPD:ATTR>
+<XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="zXxO4l4BAU+nFrWth6SztQAA">
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">WL0A7hEty0WuPRq1w2F+RgAA</XPD:REF>
+<XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
