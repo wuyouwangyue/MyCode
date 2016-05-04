@@ -21,7 +21,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			CharacterSet="1"
+			CharacterSet="2"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -196,6 +196,14 @@
 			</File>
 			<File
 				RelativePath=".\JFC\JApplication.h"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JButton.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JButton.h"
 				>
 			</File>
 			<File

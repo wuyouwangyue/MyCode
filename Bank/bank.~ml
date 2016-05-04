@@ -122,7 +122,7 @@
 <XPD:ATTR name="Left" type="integer">36</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">172</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">183</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">173</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">199</XPD:ATTR>
 <XPD:REF name="Model">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="R8LoV0YtlUiRKb9ZjYNm6AAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="QFYNCmkGP0CXd/Z4VlqwAQAA">
@@ -356,7 +356,7 @@
 <XPD:REF name="Views[1]">xs5yUVFFSUSi3LxW754H7QAA</XPD:REF>
 <XPD:REF name="Views[2]">TccVjsl8TUuxEgH57XygCwAA</XPD:REF>
 <XPD:REF name="Views[3]">THOrXGsWyEq+7sqfogAAgwAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">7</XPD:ATTR>
+<XPD:ATTR name="#Operations" type="integer">9</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="WL1klOukBk2VzQ0DP14dugAA">
 <XPD:ATTR name="Name" type="string">JApplication</XPD:ATTR>
 <XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
@@ -407,7 +407,27 @@
 <XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="WL0A7hEty0WuPRq1w2F+RgAA">
+<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="i1KBUzkOOEKgdmlp+L4lAwAA">
+<XPD:ATTR name="Name" type="string">ShowCursor</XPD:ATTR>
+<XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="OsEmfLqo4UicMDWDeyaVbwAA">
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">i1KBUzkOOEKgdmlp+L4lAwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="M+TctcHwHECuloG3iYkdiQAA">
+<XPD:ATTR name="Name" type="string">HideCursor</XPD:ATTR>
+<XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="6agn8u/wU06XgkOIj+nP4QAA">
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">M+TctcHwHECuloG3iYkdiQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[7]" type="UMLOperation" guid="WL0A7hEty0WuPRq1w2F+RgAA">
 <XPD:ATTR name="Name" type="string">Root</XPD:ATTR>
 <XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
@@ -417,7 +437,7 @@
 <XPD:REF name="Type_">LHBEHER1+keE90GZ1oy3QgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="IBwQPs76lE+/JtKocinCHQAA">
+<XPD:OBJ name="Operations[8]" type="UMLOperation" guid="IBwQPs76lE+/JtKocinCHQAA">
 <XPD:ATTR name="Name" type="string">Exec</XPD:ATTR>
 <XPD:REF name="Owner">BTuOTGIcK0qWYJhS9a9dSwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
@@ -856,6 +876,7 @@
 <XPD:ATTR name="#Attributes" type="integer">7</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="St4IOFgKKkqDiRb1/zGrNQAA">
 <XPD:ATTR name="Name" type="string">sb_</XPD:ATTR>
+<XPD:ATTR name="OwnerScope" type="UMLScopeKind">skClassifier</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">ScreenBuffer</XPD:ATTR>
 <XPD:REF name="Type_">H9W+raLiBEWXnbN0LCnTNQAA</XPD:REF>
 <XPD:REF name="Owner">8dODEYVQZEKvRRNN3SM0CQAA</XPD:REF>

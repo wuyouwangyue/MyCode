@@ -36,9 +36,15 @@ void JWindowBase::Refresh()
 ///清除矩形区域
 void JWindowBase::FillRect(JRECT rect)
 {
-	for (SHORT i=rect.Top; i<rect.Bottom; ++i)
+	CHAR_INFO ch;
+
+	ch.Attributes = fColor_ | bColor_;
+	ch.Char.AsciiChar = ' ';
+	
+	for (SHORT y=rect.Top; y<rect.Bottom; ++y)
+	for (SHORT x=rect.Left; x<rect.Right; ++x)
 	{
-		DrawHLine(i, rect.Left, rect.Right, ' ');
+		sb_->write(x_+x, y_+y, ch);
 	}
 }
 ///绘制文本, （）x, y相对于本窗口的位置）
@@ -55,27 +61,30 @@ void JWindowBase::DrawText(std::string& text)
 	DrawText(x, y, text);
 }
 ///绘制水平线
-void JWindowBase::DrawHLine(SHORT x, SHORT y1, SHORT y2, char ch)
-{
-	if(y1 > y2)
-		std::swap(y1, y2);
-
-	size_t count = y2 - y1;
-
-	std::string str(count, ch);
-	DrawText(x, y1, str);
-}
-///绘制垂直线
-void JWindowBase::DrawVLine(SHORT y, SHORT x1, SHORT x2, char ch)
+void JWindowBase::DrawHLine(SHORT y, SHORT x1, SHORT x2, char ch)
 {
 	if(x1 > x2)
 		std::swap(x1, x2);
-	std::string str;
-	str += ch;
 
-	for(SHORT i = x1; i<=x2; i++)
+	size_t count = x2 - x1 + 1;
+
+	std::string str(count, ch);
+	DrawText(x1, y, str);
+}
+///绘制垂直线
+void JWindowBase::DrawVLine(SHORT x, SHORT y1, SHORT y2, char ch)
+{
+	if(y1 > y2)
+		std::swap(y1, y2);
+	
+	CHAR_INFO ci;
+
+	ci.Attributes = fColor_ | bColor_;
+	ci.Char.AsciiChar = ch;
+
+	for(SHORT y = y1; y<=y2; ++y)
 	{
-		DrawText(i, y, str);
+		sb_->write(x_+x, y_+y, ci);
 	}
 
 }

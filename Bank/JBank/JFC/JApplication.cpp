@@ -21,7 +21,7 @@ JApplication::JApplication()
 	COORD coord = {80, 25};
 	SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 	HideCursor();
-	root_ = new JWindow(0, 0, 80, 25);
+	root_ = new JWindow(0, 0, 80, 25, 0);
 	root_->Show();
 }
 

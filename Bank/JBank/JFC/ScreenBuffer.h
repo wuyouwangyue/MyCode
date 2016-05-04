@@ -29,7 +29,7 @@ public:
 	///向xy位置写入一个字符
 	void write(SHORT x, SHORT y, CHAR_INFO ch)
 	{
-		buffer_[x * BUFFER_WIDTH + y] = ch;
+		buffer_[y * BUFFER_WIDTH + x] = ch;
 	}
 	///向xy位置写入一个字符串
 	void write(SHORT x, SHORT y, std::string str, WORD fColor, WORD bColor)
@@ -40,7 +40,7 @@ public:
 		for (size_t i=0; i < str.length(); ++i)
 		{
 			ch.Char.AsciiChar = str[i];
-			write(x, y+i, ch);
+			write(x+i, y, ch);
 		}
 	}
 	///刷新到屏幕
