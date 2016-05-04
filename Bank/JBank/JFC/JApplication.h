@@ -16,6 +16,11 @@ public:
 	void SetCurrent(JWindow* win){ current_ = win; } 
 	JWindow* GetCurrent() const{ return current_; }
 	JWindow* Root() const { return root_; }
+	
+	///显示光标
+	void ShowCursor() const;
+	///隐藏光标
+	void HideCursor() const;
 
 	int Exec();
 

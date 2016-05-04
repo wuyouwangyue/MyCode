@@ -15,8 +15,14 @@ JApplication::JApplication()
 		return ;
 
 	self_ = this;
-	root_ = new JWindow;
-	current_ = root_;
+	///支持中文
+	SetConsoleOutputCP(936);
+	///设置屏幕缓冲区大小（没有右边的滚动条）
+	COORD coord = {80, 25};
+	SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+	HideCursor();
+	root_ = new JWindow(0, 0, 80, 25);
+	root_->Show();
 }
 
 JApplication::~JApplication()
@@ -38,4 +44,23 @@ int JApplication::Exec()
 	}
 
 	return 0;
+}
+
+void JApplication::ShowCursor() const
+{
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	CONSOLE_CURSOR_INFO cci; 
+
+	GetConsoleCursorInfo(handle, &cci);
+	cci.bVisible = true;
+	SetConsoleCursorInfo(handle, &cci);
+}
+void JApplication::HideCursor() const
+{
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	CONSOLE_CURSOR_INFO cci; 
+
+	GetConsoleCursorInfo(handle, &cci);
+	cci.bVisible = false;
+	SetConsoleCursorInfo(handle, &cci);
 }

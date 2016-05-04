@@ -210,6 +210,18 @@
 				RelativePath=".\JFC\JWindow.h"
 				>
 			</File>
+			<File
+				RelativePath=".\JFC\JWindowBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JWindowBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\ScreenBuffer.h"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

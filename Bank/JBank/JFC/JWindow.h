@@ -1,18 +1,22 @@
 #ifndef _JWINDOW_H_
 #define _JWINDOW_H_
 
+#include "JWindowBase.h"
 
 namespace JFC
 {
 class JEvent;
 
-class JWindow
+class JWindow : JWindowBase
 {
 public:
 	JWindow();
-	~JWindow();
+	JWindow(SHORT x, SHORT y, SHORT width, SHORT height);
+	virtual~JWindow();
 
 	virtual void OnKeyEvent(JEvent *e);
+	virtual void Draw();
+	void Show();
 };
 
 }
