@@ -211,6 +211,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\JFC\JForm.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\JFC\JForm.h"
 				>
 			</File>

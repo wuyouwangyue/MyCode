@@ -1,9 +1,9 @@
 #ifndef _JFORM_H_
 #define _JFORM_H_
 
-#include "JWindow.h"
-
 #include <vector>
+#include "JWindow.h"
+#include "JEvent.h"
 
 namespace JFC
 {
@@ -11,24 +11,14 @@ namespace JFC
 class JForm : public JWindow
 {
 public:
-	JForm(){}
-	JForm(SHORT x, SHORT y, SHORT width, SHORT height, JWindow* parent = jApp->Root())
-		: JWindow(x, y, width, height, parent)
-	{
+	JForm();
+	JForm(SHORT x, SHORT y, SHORT width, SHORT height, JWindow* parent = jApp->Root());
+	virtual~JForm();
 
-	}
-	virtual~JForm(){}
+	virtual void OnKeyEvent(JEvent *e);
 
 	///绘制所以子窗口
-	virtual void Draw()
-	{
-		std::vector<JWindow*>::const_iterator it;
-
-		for (it = child_.begin(); it != child_.end(); ++it)
-		{
-			(*it)->Draw();
-		}
-	}
+	virtual void Draw();
 };
 
 }

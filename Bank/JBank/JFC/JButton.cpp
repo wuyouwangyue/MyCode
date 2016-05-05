@@ -5,6 +5,7 @@ using namespace JFC;
 JButton::JButton()
 	:JWindow(0,0,0,0,0)
 {
+	SetCanFocus();
 }
 JButton::JButton(SHORT x, SHORT y, SHORT width, SHORT height,
 			   	const std::string &text,
@@ -12,7 +13,7 @@ JButton::JButton(SHORT x, SHORT y, SHORT width, SHORT height,
 	: JWindow(x, y, width, height, parent),
 	  text_(text)
 {
-
+	SetCanFocus();
 }
 JButton::~JButton()
 {

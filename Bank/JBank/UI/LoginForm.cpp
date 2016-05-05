@@ -1,4 +1,5 @@
 #include "LoginForm.h"
+#include "../JFC/JEvent.h"
 
 using namespace UI;
 
@@ -46,4 +47,14 @@ void LoginForm::DrawBorder()
 	///左右边界
 	DrawVLine(0, 1, Height()-2, ' ');
 	DrawVLine(Width()-1, 1, Height()-2, ' ');
+}
+void LoginForm::OnKeyEvent(JEvent *e)
+{
+	JWindow* win = e->GetSender();
+	
+	///button按钮先不处理回车键
+	if ((win == btnLogin_ || win == btnExit_) && e->GetEventCode() == KEY_ENTER)
+		e->Done();
+
+	JForm::OnKeyEvent(e);
 }

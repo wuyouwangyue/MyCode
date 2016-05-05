@@ -10,7 +10,7 @@ class JEvent
 {
 public:
 	JEvent(JWindow* sender, int code)
-		: sender_(sender), code_(code)
+		: sender_(sender), code_(code), done_(false)
 	{
 
 	}

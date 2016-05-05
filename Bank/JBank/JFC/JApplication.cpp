@@ -10,6 +10,7 @@ using namespace JFC;
 JApplication* JApplication::self_ = 0;
 
 JApplication::JApplication()
+	: current_(0)
 {
 	if(self_)
 		return ;
@@ -35,6 +36,15 @@ int JApplication::Exec()
 	{
 		///获取一个键盘事件
 		int key = _getch();
+		
+		if (key == 224)///功能键盘区
+		{
+			key = (224<<8) + _getch();
+		}
+		else if(key == 0) ///F1~F10
+		{
+			key = -1 * _getch();
+		}
 
 		if(current_)
 		{

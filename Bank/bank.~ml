@@ -1484,12 +1484,14 @@
 <XPD:ATTR name="#Attributes" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="WHmWjKq/O0e/0yars0fPQQAA">
 <XPD:ATTR name="Name" type="string">btnLogin_</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">JButton</XPD:ATTR>
 <XPD:REF name="Type_">JLWcGwA4LUyOIzW8Guo1/QAA</XPD:REF>
 <XPD:REF name="Owner">iv7CLto/KU+KfejkBfzFRAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="ZMHc/7Y9x0ygKGSaA9OeyQAA">
 <XPD:ATTR name="Name" type="string">btnExit_</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">Jbutton</XPD:ATTR>
 <XPD:REF name="Owner">iv7CLto/KU+KfejkBfzFRAAA</XPD:REF>
 </XPD:OBJ>

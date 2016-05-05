@@ -18,7 +18,7 @@ public:
 	LoginForm(SHORT x, SHORT y, SHORT width, SHORT height,
 			  JWindow* parent = jApp->Root());
 	~LoginForm();
-
+	virtual void OnKeyEvent(JEvent *e);
 	virtual void Draw();
 	///ªÊ÷∆±ﬂΩÁ
 	void DrawBorder();
