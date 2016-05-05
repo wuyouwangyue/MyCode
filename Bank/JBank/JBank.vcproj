@@ -211,6 +211,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\JFC\JForm.h"
+				>
+			</File>
+			<File
 				RelativePath=".\JFC\JWindow.cpp"
 				>
 			</File>
@@ -228,6 +232,18 @@
 			</File>
 			<File
 				RelativePath=".\JFC\ScreenBuffer.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="UI"
+			>
+			<File
+				RelativePath=".\UI\LoginForm.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\UI\LoginForm.h"
 				>
 			</File>
 		</Filter>

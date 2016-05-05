@@ -48,12 +48,12 @@ void JWindowBase::FillRect(JRECT rect)
 	}
 }
 ///绘制文本, （）x, y相对于本窗口的位置）
-void JWindowBase::DrawText(SHORT x, SHORT y, std::string& text)
+void JWindowBase::DrawText(SHORT x, SHORT y, const std::string& text)
 {
 	sb_->write(x_+x, y_+y, text, fColor_, bColor_);
 }
 ///默认在中间绘制
-void JWindowBase::DrawText(std::string& text)
+void JWindowBase::DrawText(const std::string& text)
 {
 	SHORT x = (Width() - text.length()) / 2;
 	SHORT y = (Height()-1) / 2;

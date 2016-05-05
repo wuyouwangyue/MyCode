@@ -87,8 +87,8 @@ public:
 	///清除矩形区域
 	void FillRect(JRECT rect);
 	///绘制文本
-	void DrawText(SHORT x, SHORT y, std::string& text);
-	void DrawText(std::string& text);
+	void DrawText(SHORT x, SHORT y, const std::string& text);
+	void DrawText(const std::string& text);
 	///绘制水平线
 	void DrawHLine(SHORT y, SHORT x1, SHORT x2, char ch);
 	///绘制垂直线
