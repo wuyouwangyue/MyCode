@@ -25,6 +25,9 @@ void JButton::Draw()
 	///如果是当前选中窗口，红底白字，否则灰底蓝字
 	if (IsCurrent())
 	{
+		///关闭光标显示
+		jApp->HideCursor();
+
 		SetTextColor(FCOLOR_WHITE);
 		SetBkColor(BCOLOR_RED);
 	} 

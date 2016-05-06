@@ -207,6 +207,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\JFC\JEdit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JEdit.h"
+				>
+			</File>
+			<File
 				RelativePath=".\JFC\JEvent.h"
 				>
 			</File>
@@ -216,6 +224,14 @@
 			</File>
 			<File
 				RelativePath=".\JFC\JForm.h"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JLabel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JLabel.h"
 				>
 			</File>
 			<File
@@ -248,6 +264,14 @@
 			</File>
 			<File
 				RelativePath=".\UI\LoginForm.h"
+				>
+			</File>
+			<File
+				RelativePath=".\UI\Validator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\UI\Validator.h"
 				>
 			</File>
 		</Filter>

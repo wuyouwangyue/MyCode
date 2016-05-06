@@ -3,6 +3,8 @@
 
 #include "../JFC/JForm.h"
 #include "../JFC/JButton.h"
+#include "../JFC/JLabel.h"
+#include "../JFC/JEdit.h"
 
 using namespace JFC;
 
@@ -26,6 +28,14 @@ public:
 private:
 	JButton* btnLogin_;		//µÇÂ½°´Å¥
 	JButton* btnExit_;		//ÍË³ö°´Å¥
+
+	JLabel* lblUser_;
+	JEdit*  editUser_;
+	JLabel* lblUserTip_;
+
+	JLabel* lblPass_;
+	JEdit*  editPass_;
+	JLabel* lblPassTip_;
 };
 
 }
