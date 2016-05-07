@@ -15,6 +15,7 @@ JButton::JButton(SHORT x, SHORT y, SHORT width, SHORT height,
 {
 	SetCanFocus();
 }
+
 JButton::~JButton()
 {
 }

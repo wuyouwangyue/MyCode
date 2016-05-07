@@ -235,6 +235,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\JFC\JMessageBox.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\JMessageBox.h"
+				>
+			</File>
+			<File
 				RelativePath=".\JFC\JWindow.cpp"
 				>
 			</File>
@@ -252,6 +260,10 @@
 			</File>
 			<File
 				RelativePath=".\JFC\ScreenBuffer.h"
+				>
+			</File>
+			<File
+				RelativePath=".\JFC\ScreenSaver.h"
 				>
 			</File>
 		</Filter>
